@@ -1,9 +1,10 @@
 <html>
 	<head>
-		<title> This is my kitten page </title>
+		<title> Meow </title>
+		<link href="/stylesheets/application.css" rel="stylesheet" type="text/css">
 	</head>
-	<body>
-		<div style='border: 10px solid green'>
+		<body>
+			<div class= 'kitten'>
 			<% if @visitor %>
 				Hello, <%= @visitor %>!
 			<% else %>
@@ -15,6 +16,5 @@
 				</form>
 			<% end %>
 			<img src='images/kitten.png'>
-		</div>
-	</body>
+		</body>
 </html>
