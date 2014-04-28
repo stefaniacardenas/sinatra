@@ -1,0 +1,14 @@
+<div style='border: 10px solid green'>
+	<% if @visitor %>
+		Hello, <%= @visitor %>!
+<% else %>
+	<form action="/hello">
+		My name is <%= @name %>.
+		What's your name?
+		<input type="text" name="name">
+		<input type="submit">
+	</form>
+<% end %>
+
+	<img src='http://localhost:4567/images/kitten.png'>
+</div>
